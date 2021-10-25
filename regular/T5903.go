@@ -4,7 +4,7 @@ type Bank struct {
 	balance []int64
 }
 
-func Constructor(balance []int64) Bank {
+func Constructor5903(balance []int64) Bank {
 	bank := Bank{}
 	bank.balance = balance
 	return bank
@@ -63,7 +63,7 @@ func (this *Bank) Withdraw(account int, money int64) bool {
 }
 
 func T5903() {
-	bank := Constructor([]int64{10, 100, 20, 50, 30})
+	bank := Constructor5903([]int64{10, 100, 20, 50, 30})
 	bank.Withdraw(3, 10) // 返回 true ，账户 3 的余额是 $20 ，所以可以取款 $10 。
 	// 账户 3 余额为 $20 - $10 = $10 。
 	bank.Transfer(5, 1, 20) // 返回 true ，账户 5 的余额是 $30 ，所以可以转账 $20 。
@@ -77,7 +77,7 @@ func T5903() {
 
 /**
  * Your Bank object will be instantiated and called as such:
- * obj := Constructor(balance);
+ * obj := Constructor5903(balance);
  * param_1 := obj.Transfer(account1,account2,money);
  * param_2 := obj.Deposit(account,money);
  * param_3 := obj.Withdraw(account,money);

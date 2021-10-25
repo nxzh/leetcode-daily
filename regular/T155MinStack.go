@@ -37,7 +37,7 @@ type MinStack struct {
 }
 
 /** initialize your data structure here. */
-//func Constructor() MinStack {
+//func Constructor5903() MinStack {
 //	return MinStack{}
 //}
 

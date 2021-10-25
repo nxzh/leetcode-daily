@@ -62,7 +62,7 @@ func (this *MyQueue) Empty() bool {
 }
 
 func T232() {
-	//queue := Constructor()
+	//queue := Constructor5903()
 	//queue.Push(1)
 	//queue.Pop()
 	//fmt.Println(queue.Empty())
@@ -70,7 +70,7 @@ func T232() {
 
 /**
  * Your MyQueue object will be instantiated and called as such:
- * obj := Constructor();
+ * obj := Constructor5903();
  * obj.Push(x);
  * param_2 := obj.Pop();
  * param_3 := obj.Peek();
