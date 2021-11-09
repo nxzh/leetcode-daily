@@ -1,6 +1,6 @@
 package main
 
-import "LeetCode/regular"
+import "leetcode-daily/regular"
 
 func main() {
 	//y2021m09.Call05()
