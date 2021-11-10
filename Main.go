@@ -1,10 +1,10 @@
 package main
 
-import "leetcode-daily/regular"
+import "LeetCode/regular"
 
 func main() {
 	//y2021m09.Call05()
 	//most_popular.Call102()
 	//most_popular.CallT05()
-	regular.T77()
+	regular.T46()
 }

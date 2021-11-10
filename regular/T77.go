@@ -2,7 +2,7 @@ package regular
 
 import "fmt"
 
-func combine1(n int, k int) [][]int {
+func combine(n int, k int) [][]int {
 	queue := [][]int{{}}
 	result := [][]int{}
 	for i := 1; i <= n; i++ {
@@ -21,7 +21,7 @@ func combine1(n int, k int) [][]int {
 	return result
 }
 
-func combine(n int, k int) [][]int {
+func combine1(n int, k int) [][]int {
 	// set a list to put the result
 	// set a list to put the path
 	result := [][]int{}
