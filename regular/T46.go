@@ -3,6 +3,31 @@ package regular
 import "fmt"
 
 func permute(nums []int) [][]int {
+	result := [][]int{}
+	permuteInternal(nums, 0, &result)
+	return result
+}
+
+func permuteInternal(nums []int, from int, result *[][]int) {
+	if from == len(nums) {
+		copied := make([]int, len(nums))
+		copy(copied, nums)
+		*result = append(*result, copied)
+	}
+	for j := from; j < len(nums); j++ {
+		swapNums(nums, from, j)
+		permuteInternal(nums, from+1, result)
+		swapNums(nums, from, j)
+	}
+}
+
+func swapNums(nums []int, i int, j int) {
+	temp := nums[i]
+	nums[i] = nums[j]
+	nums[j] = temp
+}
+
+func permute1(nums []int) [][]int {
 	if len(nums) == 1 {
 		return [][]int{{nums[0]}}
 	}
@@ -40,6 +65,6 @@ func insertToPos(pos int, data int, elements []int) []int {
 }
 
 func T46() {
-	res := permute([]int{5, 4, 6, 2})
+	res := permute([]int{1, 2, 3})
 	fmt.Println(res)
 }
