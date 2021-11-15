@@ -18,7 +18,7 @@ import (
 type Codec struct {
 }
 
-func Constructor() Codec {
+func Constructor297() Codec {
 	codec := Codec{}
 	return codec
 }
@@ -125,7 +125,7 @@ func (this *Codec) deserialize(data string) *TreeNode {
 }
 
 func T297() {
-	codec := Constructor()
+	codec := Constructor297()
 	//tree := &TreeNode{10, &TreeNode{20, &TreeNode{40, &TreeNode{60, nil, nil}, nil}, nil}, &TreeNode{30, nil, &TreeNode{50, nil, nil}}}
 	tree := &TreeNode{1, nil, &TreeNode{2, nil, nil}}
 	sed := codec.serialize(tree)
